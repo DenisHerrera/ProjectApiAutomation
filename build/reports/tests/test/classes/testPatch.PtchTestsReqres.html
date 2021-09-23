@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.594s</div>
+<div class="counter">7.203s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,6 +66,9 @@
 <li>
 <a href="#tab1">Standard output</a>
 </li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -79,17 +82,17 @@
 </thead>
 <tr>
 <td class="success">patchUser</td>
-<td class="success">0.959s</td>
+<td class="success">5.310s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">patchUserWithPojo</td>
-<td class="success">0.656s</td>
+<td class="success">0.785s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">patchUserWithoutId</td>
-<td class="success">0.979s</td>
+<td class="success">1.108s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,38 +100,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2021-09-23T12:51:05,744 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
-2021-09-23T12:51:05,775 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
-Request method:	PATCH
-Request URI:	https://reqres.in/api/users/2
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;job&quot;: &quot;Quality Assurance&quot;
-}
-Request method:	PATCH
-Request URI:	https://reqres.in/api/users/2
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;job&quot;: &quot;Quality Assurance&quot;
-}
+<pre>2021-09-23T13:50:41,641 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T13:50:44,013 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
 Request method:	PATCH
 Request URI:	https://reqres.in/api/users/2
 Proxy:			&lt;none&gt;
@@ -145,102 +118,26 @@ Body:
     &quot;job&quot;: &quot;Quality Assurance&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:06 GMT
+Date: Thu, 23 Sep 2021 17:50:47 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 x-powered-by: Express
 access-control-allow-origin: *
-etag: W/&quot;42-DjolSC1LH0UUKpXQUNO4qEmliHk&quot;
+etag: W/&quot;42-AHo9k9rjAKFX5kCz7y573HMRR2M&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=TAeijsP7XHD5rLLYWhwk2CicRlgx5dguYJCXilbzRD7qhmDEoJKeOy5z%2Bj6V2JeFA8XLH43D%2F%2F3CXyEXEv1m70ScFupDLAGxrGbb5IAqOwUXQLvi6GiT7cWEvD4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=cXR2q%2BNOTU9o8xa%2F%2BVIExqQUIGv6W5mBcptLOJFThZeGBh7G3mvwZb4LQhOKUditTNAfLC28o5wCriFZljeavSPdVTATCdS%2Bvdz5aGdWtZlNuvlL2YcjTy8Cll4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 6935469cca09e52a-ARI
+CF-RAY: 69359e06f98fe526-ARI
 Content-Encoding: gzip
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;job&quot;: &quot;Quality Assurance&quot;,
-    &quot;updatedAt&quot;: &quot;2021-09-23T16:51:06.769Z&quot;
-}
-HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:06 GMT
-Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-x-powered-by: Express
-access-control-allow-origin: *
-etag: W/&quot;42-DjolSC1LH0UUKpXQUNO4qEmliHk&quot;
-via: 1.1 vegur
-CF-Cache-Status: DYNAMIC
-Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=TAeijsP7XHD5rLLYWhwk2CicRlgx5dguYJCXilbzRD7qhmDEoJKeOy5z%2Bj6V2JeFA8XLH43D%2F%2F3CXyEXEv1m70ScFupDLAGxrGbb5IAqOwUXQLvi6GiT7cWEvD4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-Server: cloudflare
-CF-RAY: 6935469cca09e52a-ARI
-Content-Encoding: gzip
-alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-
-{
-    &quot;job&quot;: &quot;Quality Assurance&quot;,
-    &quot;updatedAt&quot;: &quot;2021-09-23T16:51:06.769Z&quot;
-}
-HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:06 GMT
-Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-x-powered-by: Express
-access-control-allow-origin: *
-etag: W/&quot;42-DjolSC1LH0UUKpXQUNO4qEmliHk&quot;
-via: 1.1 vegur
-CF-Cache-Status: DYNAMIC
-Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=TAeijsP7XHD5rLLYWhwk2CicRlgx5dguYJCXilbzRD7qhmDEoJKeOy5z%2Bj6V2JeFA8XLH43D%2F%2F3CXyEXEv1m70ScFupDLAGxrGbb5IAqOwUXQLvi6GiT7cWEvD4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-Server: cloudflare
-CF-RAY: 6935469cca09e52a-ARI
-Content-Encoding: gzip
-alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-
-{
-    &quot;job&quot;: &quot;Quality Assurance&quot;,
-    &quot;updatedAt&quot;: &quot;2021-09-23T16:51:06.769Z&quot;
-}
-Request method:	PATCH
-Request URI:	https://reqres.in/api/users/
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;name&quot;: &quot;Diego Lopez&quot;,
-    &quot;job&quot;: null
-}
-Request method:	PATCH
-Request URI:	https://reqres.in/api/users/
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;name&quot;: &quot;Diego Lopez&quot;,
-    &quot;job&quot;: null
+    &quot;updatedAt&quot;: &quot;2021-09-23T17:50:47.340Z&quot;
 }
 Request method:	PATCH
 Request URI:	https://reqres.in/api/users/
@@ -259,105 +156,27 @@ Body:
     &quot;job&quot;: null
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:07 GMT
+Date: Thu, 23 Sep 2021 17:50:50 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 x-powered-by: Express
 access-control-allow-origin: *
-etag: W/&quot;48-62GPs4D2VffiMmUo5Ood3xCk1uY&quot;
+etag: W/&quot;48-LEAI6DaAaoaTHidGSTFRvMqByIE&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=fpvUD4CFmR2lbtnF6Z2XN1Ec7b%2Fwhyczvcd5Gi6mFlti4FpOFGJMTjqD2CWxOMmsBpb1NxHpuEV53aE2ul2O4RB8iFwEHIrxuXAfqE2gUNh%2BCZtpOpRCznRU%2B98%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=wJdVvt4ttYjPwGv%2B2ZaRxv26EEW1jnLzWXTxrWN35o0O9D%2FTyOp2OdCTxGOZaquwRiU6Jm8QFPLyZ7B%2F6M77cG0sDZ%2BTO5X6t6daB6juW5NnGaKU0xPNJtHn4RM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546a3282ae532-ARI
+CF-RAY: 69359e1b0b67e51e-ARI
 Content-Encoding: gzip
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;name&quot;: &quot;Diego Lopez&quot;,
     &quot;job&quot;: null,
-    &quot;updatedAt&quot;: &quot;2021-09-23T16:51:07.679Z&quot;
-}
-HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:07 GMT
-Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-x-powered-by: Express
-access-control-allow-origin: *
-etag: W/&quot;48-62GPs4D2VffiMmUo5Ood3xCk1uY&quot;
-via: 1.1 vegur
-CF-Cache-Status: DYNAMIC
-Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=fpvUD4CFmR2lbtnF6Z2XN1Ec7b%2Fwhyczvcd5Gi6mFlti4FpOFGJMTjqD2CWxOMmsBpb1NxHpuEV53aE2ul2O4RB8iFwEHIrxuXAfqE2gUNh%2BCZtpOpRCznRU%2B98%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-Server: cloudflare
-CF-RAY: 693546a3282ae532-ARI
-Content-Encoding: gzip
-alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-
-{
-    &quot;name&quot;: &quot;Diego Lopez&quot;,
-    &quot;job&quot;: null,
-    &quot;updatedAt&quot;: &quot;2021-09-23T16:51:07.679Z&quot;
-}
-HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:07 GMT
-Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-x-powered-by: Express
-access-control-allow-origin: *
-etag: W/&quot;48-62GPs4D2VffiMmUo5Ood3xCk1uY&quot;
-via: 1.1 vegur
-CF-Cache-Status: DYNAMIC
-Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=fpvUD4CFmR2lbtnF6Z2XN1Ec7b%2Fwhyczvcd5Gi6mFlti4FpOFGJMTjqD2CWxOMmsBpb1NxHpuEV53aE2ul2O4RB8iFwEHIrxuXAfqE2gUNh%2BCZtpOpRCznRU%2B98%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-Server: cloudflare
-CF-RAY: 693546a3282ae532-ARI
-Content-Encoding: gzip
-alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-
-{
-    &quot;name&quot;: &quot;Diego Lopez&quot;,
-    &quot;job&quot;: null,
-    &quot;updatedAt&quot;: &quot;2021-09-23T16:51:07.679Z&quot;
-}
-Request method:	PATCH
-Request URI:	https://reqres.in/api/users/2
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;name&quot;: &quot;Denis&quot;,
-    &quot;job&quot;: null
-}
-Request method:	PATCH
-Request URI:	https://reqres.in/api/users/2
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;name&quot;: &quot;Denis&quot;,
-    &quot;job&quot;: null
+    &quot;updatedAt&quot;: &quot;2021-09-23T17:50:50.372Z&quot;
 }
 Request method:	PATCH
 Request URI:	https://reqres.in/api/users/2
@@ -376,74 +195,37 @@ Body:
     &quot;job&quot;: null
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:08 GMT
+Date: Thu, 23 Sep 2021 17:50:51 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 x-powered-by: Express
 access-control-allow-origin: *
-etag: W/&quot;42-MkBfW61GVHIc2AVAXBHKZm69Yaw&quot;
+etag: W/&quot;42-IiwkPI50s0KUBGksHD+hTNn0RTI&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=D6EN%2FaHRbLo9aS9rJzo4cZlnoqG1KmNubs1qLpz58gc%2B9kvmGoocDY70V7Nq81lv09NgS34x5CJcetoTq9VaQiImDuZ4rdctMiMF5%2B6gB0AwooBAF0fGFqC1DyA%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=B47puV7izoAu3RhQ9UpRIero%2Bj4cjGgmf6TddVf9yFp%2B7iO2B%2BMKWUvctFlXGZlYTAzjZRvrOimLcsFAhjY2vdjybJRP03O2pVtKDu9VavyieR0dWOohGXJBiGc%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546a80ec0e51e-ARI
+CF-RAY: 69359e20486ce51a-ARI
 Content-Encoding: gzip
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;name&quot;: &quot;Denis&quot;,
     &quot;job&quot;: null,
-    &quot;updatedAt&quot;: &quot;2021-09-23T16:51:08.509Z&quot;
+    &quot;updatedAt&quot;: &quot;2021-09-23T17:50:51.259Z&quot;
 }
-HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:08 GMT
-Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-x-powered-by: Express
-access-control-allow-origin: *
-etag: W/&quot;42-MkBfW61GVHIc2AVAXBHKZm69Yaw&quot;
-via: 1.1 vegur
-CF-Cache-Status: DYNAMIC
-Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=D6EN%2FaHRbLo9aS9rJzo4cZlnoqG1KmNubs1qLpz58gc%2B9kvmGoocDY70V7Nq81lv09NgS34x5CJcetoTq9VaQiImDuZ4rdctMiMF5%2B6gB0AwooBAF0fGFqC1DyA%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-Server: cloudflare
-CF-RAY: 693546a80ec0e51e-ARI
-Content-Encoding: gzip
-alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-
-{
-    &quot;name&quot;: &quot;Denis&quot;,
-    &quot;job&quot;: null,
-    &quot;updatedAt&quot;: &quot;2021-09-23T16:51:08.509Z&quot;
-}
-HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:08 GMT
-Content-Type: application/json; charset=utf-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-x-powered-by: Express
-access-control-allow-origin: *
-etag: W/&quot;42-MkBfW61GVHIc2AVAXBHKZm69Yaw&quot;
-via: 1.1 vegur
-CF-Cache-Status: DYNAMIC
-Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=D6EN%2FaHRbLo9aS9rJzo4cZlnoqG1KmNubs1qLpz58gc%2B9kvmGoocDY70V7Nq81lv09NgS34x5CJcetoTq9VaQiImDuZ4rdctMiMF5%2B6gB0AwooBAF0fGFqC1DyA%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-Server: cloudflare
-CF-RAY: 693546a80ec0e51e-ARI
-Content-Encoding: gzip
-alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-
-{
-    &quot;name&quot;: &quot;Denis&quot;,
-    &quot;job&quot;: null,
-    &quot;updatedAt&quot;: &quot;2021-09-23T16:51:08.509Z&quot;
-}
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 </pre>
 </span>
 </div>
@@ -455,7 +237,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 23 sep. de 2021 12:51:12</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 23 sep. de 2021 13:51:04</p>
 </div>
 </div>
 </body>

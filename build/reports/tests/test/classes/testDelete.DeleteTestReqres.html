@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.610s</div>
+<div class="counter">2.288s</div>
 <p>duration</p>
 </div>
 </td>
@@ -69,9 +69,6 @@
 <li>
 <a href="#tab2">Standard output</a>
 </li>
-<li>
-<a href="#tab3">Standard error</a>
-</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
@@ -95,9 +92,6 @@ Expected status code &lt;404&gt; but was &lt;204&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -106,14 +100,9 @@ Expected status code &lt;404&gt; but was &lt;204&gt;.
 	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -292,17 +281,17 @@ Expected status code &lt;404&gt; but was &lt;204&gt;.
 </thead>
 <tr>
 <td class="success">deleteUserTest</td>
-<td class="success">0.756s</td>
+<td class="success">0.630s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">deleteWithLetterIdTest</td>
-<td class="failures">5.124s</td>
+<td class="failures">0.981s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">deleteWithoutUserIdTest</td>
-<td class="failures">0.730s</td>
+<td class="failures">0.677s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -310,8 +299,44 @@ Expected status code &lt;404&gt; but was &lt;204&gt;.
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2021-09-23T12:50:50,844 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
-2021-09-23T12:50:54,319 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+<pre>2021-09-23T13:50:56,816 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T13:50:56,818 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/a
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/a
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/a
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
 Request method:	DELETE
 Request URI:	https://reqres.in/api/users/a
 Proxy:			&lt;none&gt;
@@ -325,7 +350,7 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
 HTTP/1.1 204 No Content
-Date: Thu, 23 Sep 2021 16:50:59 GMT
+Date: Thu, 23 Sep 2021 17:50:57 GMT
 Content-Length: 0
 Connection: keep-alive
 x-powered-by: Express
@@ -334,10 +359,55 @@ etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=4uzINclMk7CcicRoIElOrbs9xVMTsYanhrgyEQwAFCtPs6JZatCvBx4PpLruvwR2ioPp1lsZa9CLE%2FDIf7LxrV%2F85u0LAHaFg%2FykfuOiYiWOYSK21kO1IUUyJYQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1xVZoE%2BXapvrfhD%2Fel%2BC7YVViuX4EzCw4IT8vJEKdI6ECJT8B4ttYONZX0QZhavI2YsnFlH9EN4SVDzvcifBuJ3CAH0Z53uGakf53gjTHTnS8xSqDuMdxskZj4I%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 6935466bdaf0e51e-ARI
+CF-RAY: 69359e48d97ee532-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+HTTP/1.1 204 No Content
+Date: Thu, 23 Sep 2021 17:50:57 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1xVZoE%2BXapvrfhD%2Fel%2BC7YVViuX4EzCw4IT8vJEKdI6ECJT8B4ttYONZX0QZhavI2YsnFlH9EN4SVDzvcifBuJ3CAH0Z53uGakf53gjTHTnS8xSqDuMdxskZj4I%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e48d97ee532-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+HTTP/1.1 204 No Content
+Date: Thu, 23 Sep 2021 17:50:57 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1xVZoE%2BXapvrfhD%2Fel%2BC7YVViuX4EzCw4IT8vJEKdI6ECJT8B4ttYONZX0QZhavI2YsnFlH9EN4SVDzvcifBuJ3CAH0Z53uGakf53gjTHTnS8xSqDuMdxskZj4I%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e48d97ee532-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+HTTP/1.1 204 No Content
+Date: Thu, 23 Sep 2021 17:50:57 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=1xVZoE%2BXapvrfhD%2Fel%2BC7YVViuX4EzCw4IT8vJEKdI6ECJT8B4ttYONZX0QZhavI2YsnFlH9EN4SVDzvcifBuJ3CAH0Z53uGakf53gjTHTnS8xSqDuMdxskZj4I%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e48d97ee532-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 Request method:	DELETE
 Request URI:	https://reqres.in/api/users/
@@ -351,8 +421,44 @@ Headers:		Accept=*/*
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
 HTTP/1.1 204 No Content
-Date: Thu, 23 Sep 2021 16:51:00 GMT
+Date: Thu, 23 Sep 2021 17:50:58 GMT
 Content-Length: 0
 Connection: keep-alive
 x-powered-by: Express
@@ -361,10 +467,55 @@ etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=K34KCafdg9I%2FS0I9%2BTThQ8CGmnW4a9FO7qljgeUxU8Ep3isrj%2FnUXq1dkzsCsu3OgY5E5GZUa3vRbNba7PnnVycRqSqvKi01J9feTxBYysVbQdVaVc8qZQTap78%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=joMU2XhSkqaVYClyet8GBSHiZreJ%2FDIgMxcuco3JkQckDRiQ30TTw0XXy%2B6u1bX%2B4U%2FJ%2FnsG%2F%2BCUdbH48VwCvPFXh9RpHiUgwGdkghK28bdmw%2BYMk5wp7LOddx8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546750f58e51a-ARI
+CF-RAY: 69359e4dcae1e526-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+HTTP/1.1 204 No Content
+Date: Thu, 23 Sep 2021 17:50:58 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=joMU2XhSkqaVYClyet8GBSHiZreJ%2FDIgMxcuco3JkQckDRiQ30TTw0XXy%2B6u1bX%2B4U%2FJ%2FnsG%2F%2BCUdbH48VwCvPFXh9RpHiUgwGdkghK28bdmw%2BYMk5wp7LOddx8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e4dcae1e526-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+HTTP/1.1 204 No Content
+Date: Thu, 23 Sep 2021 17:50:58 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=joMU2XhSkqaVYClyet8GBSHiZreJ%2FDIgMxcuco3JkQckDRiQ30TTw0XXy%2B6u1bX%2B4U%2FJ%2FnsG%2F%2BCUdbH48VwCvPFXh9RpHiUgwGdkghK28bdmw%2BYMk5wp7LOddx8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e4dcae1e526-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+HTTP/1.1 204 No Content
+Date: Thu, 23 Sep 2021 17:50:58 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=joMU2XhSkqaVYClyet8GBSHiZreJ%2FDIgMxcuco3JkQckDRiQ30TTw0XXy%2B6u1bX%2B4U%2FJ%2FnsG%2F%2BCUdbH48VwCvPFXh9RpHiUgwGdkghK28bdmw%2BYMk5wp7LOddx8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e4dcae1e526-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 Request method:	DELETE
 Request URI:	https://reqres.in/api/users/2
@@ -378,8 +529,44 @@ Headers:		Accept=*/*
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/2
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/2
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/2
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
 HTTP/1.1 204 No Content
-Date: Thu, 23 Sep 2021 16:51:01 GMT
+Date: Thu, 23 Sep 2021 17:50:59 GMT
 Content-Length: 0
 Connection: keep-alive
 x-powered-by: Express
@@ -388,20 +575,56 @@ etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=o0JCsfoTwMOToEVJMxOVwO%2FQBa1hQ1ckfo9LSgecEr2zXIXz%2Bsgu3ietHnbKNdCGIMVg0nlVuqPEsL1bV4NOo6dOsTkoA7AD1TYkwFL9x0OeWRg6ZcTfwERJioQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=4lP2mfppjssDIsyEJaWxdfuSutqzBlqrfAqUmFEjDILJ2ReB0sBaF16yNTRPQ484jIc056AHzlBPmclhKdhftFYEKnXZKkPfuQvcg8K00WYZwgiUyvrrRFrrILQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 6935467a2ba0e526-ARI
+CF-RAY: 69359e51491ae52a-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
-</pre>
-</span>
-</div>
-<div id="tab3" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+HTTP/1.1 204 No Content
+Date: Thu, 23 Sep 2021 17:50:59 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=4lP2mfppjssDIsyEJaWxdfuSutqzBlqrfAqUmFEjDILJ2ReB0sBaF16yNTRPQ484jIc056AHzlBPmclhKdhftFYEKnXZKkPfuQvcg8K00WYZwgiUyvrrRFrrILQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e51491ae52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+HTTP/1.1 204 No Content
+Date: Thu, 23 Sep 2021 17:50:59 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=4lP2mfppjssDIsyEJaWxdfuSutqzBlqrfAqUmFEjDILJ2ReB0sBaF16yNTRPQ484jIc056AHzlBPmclhKdhftFYEKnXZKkPfuQvcg8K00WYZwgiUyvrrRFrrILQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e51491ae52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+HTTP/1.1 204 No Content
+Date: Thu, 23 Sep 2021 17:50:59 GMT
+Content-Length: 0
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=4lP2mfppjssDIsyEJaWxdfuSutqzBlqrfAqUmFEjDILJ2ReB0sBaF16yNTRPQ484jIc056AHzlBPmclhKdhftFYEKnXZKkPfuQvcg8K00WYZwgiUyvrrRFrrILQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e51491ae52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 </pre>
 </span>
 </div>
@@ -413,7 +636,7 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 23 sep. de 2021 12:51:12</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 23 sep. de 2021 13:51:04</p>
 </div>
 </div>
 </body>

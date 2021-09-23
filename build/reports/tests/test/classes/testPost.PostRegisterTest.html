@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">5</div>
+<div class="counter">8</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.325s</div>
+<div class="counter">5.544s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">80%</div>
+<div class="percent">87%</div>
 <p>successful</p>
 </div>
 </td>
@@ -91,8 +91,7 @@ Expected status code &lt;400&gt; but was &lt;200&gt;.
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
@@ -114,7 +113,7 @@ Expected status code &lt;400&gt; but was &lt;200&gt;.
 	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at testPost.PostRegisterTest.postRegisterInvalidPasswordTest(PostRegisterTest.java:46)
+	at testPost.PostRegisterTest.postRegisterInvalidPasswordTest(PostRegisterTest.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,27 +181,42 @@ Expected status code &lt;400&gt; but was &lt;200&gt;.
 </thead>
 <tr>
 <td class="failures">postRegisterInvalidPasswordTest</td>
-<td class="failures">0.642s</td>
+<td class="failures">0.585s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">postRegisterNotDefinedUserTest</td>
-<td class="success">0.601s</td>
+<td class="success">0.623s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">postRegisterValidTest</td>
-<td class="success">0.674s</td>
+<td class="success">0.643s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">postRegisterValidTest2</td>
-<td class="success">0.788s</td>
+<td class="success">0.686s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">postRegisterWithoutPasswordTest1</td>
-<td class="success">0.620s</td>
+<td class="success">0.637s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">responseTokenTest</td>
+<td class="success">1.118s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">serverResponseTest</td>
+<td class="success">0.593s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">userBodyResponseTest</td>
+<td class="success">0.659s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -210,8 +224,24 @@ Expected status code &lt;400&gt; but was &lt;200&gt;.
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2021-09-23T12:51:08,373 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
-2021-09-23T12:51:08,373 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+<pre>2021-09-23T13:50:59,119 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T13:50:59,123 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;123456789&quot;,
+    &quot;email&quot;: &quot;juan.perez@gmail.com&quot;
+}
 Request method:	POST
 Request URI:	https://reqres.in/api/register
 Proxy:			&lt;none&gt;
@@ -277,7 +307,7 @@ Body:
     &quot;email&quot;: &quot;juan.perez@gmail.com&quot;
 }
 HTTP/1.1 400 Bad Request
-Date: Thu, 23 Sep 2021 16:51:09 GMT
+Date: Thu, 23 Sep 2021 17:50:59 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 57
 Connection: keep-alive
@@ -287,17 +317,17 @@ etag: W/&quot;39-6jrJxn+7f+pQUhbPgNMst7tagpA&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=oCp7onDHuexZpOZzWH0LmvFHvWcwqiYEtha4Vo1w5T%2F7XjpHEbrmVd1SBOpWbnkEvuKLKjWhiIE%2F%2FSMyzTMY2WnZyLCcUeUDLLFwoMwRgTnzRALx3RC%2FGSqPdaE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=qOpL9TH80UhAVmxuKDjko2bp1scThdvLS6RYgXk34VU%2Fh%2FwTddvc%2BYttLjzUtGFl%2FQXTrJYTAPjIBeHu9qfhH6SGmqDSSJphU7JiFeTlAGuXVrtichprizRuZzg%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546ac3ad5e52a-ARI
+CF-RAY: 69359e557fcfe52a-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;error&quot;: &quot;Note: Only defined users succeed registration&quot;
 }
 HTTP/1.1 400 Bad Request
-Date: Thu, 23 Sep 2021 16:51:09 GMT
+Date: Thu, 23 Sep 2021 17:50:59 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 57
 Connection: keep-alive
@@ -307,17 +337,17 @@ etag: W/&quot;39-6jrJxn+7f+pQUhbPgNMst7tagpA&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=oCp7onDHuexZpOZzWH0LmvFHvWcwqiYEtha4Vo1w5T%2F7XjpHEbrmVd1SBOpWbnkEvuKLKjWhiIE%2F%2FSMyzTMY2WnZyLCcUeUDLLFwoMwRgTnzRALx3RC%2FGSqPdaE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=qOpL9TH80UhAVmxuKDjko2bp1scThdvLS6RYgXk34VU%2Fh%2FwTddvc%2BYttLjzUtGFl%2FQXTrJYTAPjIBeHu9qfhH6SGmqDSSJphU7JiFeTlAGuXVrtichprizRuZzg%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546ac3ad5e52a-ARI
+CF-RAY: 69359e557fcfe52a-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;error&quot;: &quot;Note: Only defined users succeed registration&quot;
 }
 HTTP/1.1 400 Bad Request
-Date: Thu, 23 Sep 2021 16:51:09 GMT
+Date: Thu, 23 Sep 2021 17:50:59 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 57
 Connection: keep-alive
@@ -327,17 +357,17 @@ etag: W/&quot;39-6jrJxn+7f+pQUhbPgNMst7tagpA&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=oCp7onDHuexZpOZzWH0LmvFHvWcwqiYEtha4Vo1w5T%2F7XjpHEbrmVd1SBOpWbnkEvuKLKjWhiIE%2F%2FSMyzTMY2WnZyLCcUeUDLLFwoMwRgTnzRALx3RC%2FGSqPdaE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=qOpL9TH80UhAVmxuKDjko2bp1scThdvLS6RYgXk34VU%2Fh%2FwTddvc%2BYttLjzUtGFl%2FQXTrJYTAPjIBeHu9qfhH6SGmqDSSJphU7JiFeTlAGuXVrtichprizRuZzg%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546ac3ad5e52a-ARI
+CF-RAY: 69359e557fcfe52a-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;error&quot;: &quot;Note: Only defined users succeed registration&quot;
 }
 HTTP/1.1 400 Bad Request
-Date: Thu, 23 Sep 2021 16:51:09 GMT
+Date: Thu, 23 Sep 2021 17:50:59 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 57
 Connection: keep-alive
@@ -347,14 +377,410 @@ etag: W/&quot;39-6jrJxn+7f+pQUhbPgNMst7tagpA&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=oCp7onDHuexZpOZzWH0LmvFHvWcwqiYEtha4Vo1w5T%2F7XjpHEbrmVd1SBOpWbnkEvuKLKjWhiIE%2F%2FSMyzTMY2WnZyLCcUeUDLLFwoMwRgTnzRALx3RC%2FGSqPdaE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=qOpL9TH80UhAVmxuKDjko2bp1scThdvLS6RYgXk34VU%2Fh%2FwTddvc%2BYttLjzUtGFl%2FQXTrJYTAPjIBeHu9qfhH6SGmqDSSJphU7JiFeTlAGuXVrtichprizRuZzg%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546ac3ad5e52a-ARI
+CF-RAY: 69359e557fcfe52a-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;error&quot;: &quot;Note: Only defined users succeed registration&quot;
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 17:50:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 57
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;39-6jrJxn+7f+pQUhbPgNMst7tagpA&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=qOpL9TH80UhAVmxuKDjko2bp1scThdvLS6RYgXk34VU%2Fh%2FwTddvc%2BYttLjzUtGFl%2FQXTrJYTAPjIBeHu9qfhH6SGmqDSSJphU7JiFeTlAGuXVrtichprizRuZzg%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e557fcfe52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;error&quot;: &quot;Note: Only defined users succeed registration&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=vIwvW9hTxyP748Jczl%2FUfV%2F7mdFzidDjy0tvQwYTbadbGOZJLko91oekGveinCtKRVZKbR7%2Fzfw5ttyvkOvnowbpi%2BQSP6KDmefz9sibxT143e3X66BNmOCiZhE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e5b2b6be532-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=vIwvW9hTxyP748Jczl%2FUfV%2F7mdFzidDjy0tvQwYTbadbGOZJLko91oekGveinCtKRVZKbR7%2Fzfw5ttyvkOvnowbpi%2BQSP6KDmefz9sibxT143e3X66BNmOCiZhE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e5b2b6be532-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=vIwvW9hTxyP748Jczl%2FUfV%2F7mdFzidDjy0tvQwYTbadbGOZJLko91oekGveinCtKRVZKbR7%2Fzfw5ttyvkOvnowbpi%2BQSP6KDmefz9sibxT143e3X66BNmOCiZhE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e5b2b6be532-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=vIwvW9hTxyP748Jczl%2FUfV%2F7mdFzidDjy0tvQwYTbadbGOZJLko91oekGveinCtKRVZKbR7%2Fzfw5ttyvkOvnowbpi%2BQSP6KDmefz9sibxT143e3X66BNmOCiZhE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e5b2b6be532-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=vIwvW9hTxyP748Jczl%2FUfV%2F7mdFzidDjy0tvQwYTbadbGOZJLko91oekGveinCtKRVZKbR7%2Fzfw5ttyvkOvnowbpi%2BQSP6KDmefz9sibxT143e3X66BNmOCiZhE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e5b2b6be532-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=F%2Bno6ZDfX1Ub1bh3%2FLf9PsLh2pw5W65VundiZ8rkm7wUOm49XQGAH0109h5n5mpTQ4JXbWQg8DHuOGLboR4QMssaggKCL3Ig7KwoxYH92YwmNJgjCVbrfhXiudw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e602a01e51e-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=F%2Bno6ZDfX1Ub1bh3%2FLf9PsLh2pw5W65VundiZ8rkm7wUOm49XQGAH0109h5n5mpTQ4JXbWQg8DHuOGLboR4QMssaggKCL3Ig7KwoxYH92YwmNJgjCVbrfhXiudw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e602a01e51e-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=F%2Bno6ZDfX1Ub1bh3%2FLf9PsLh2pw5W65VundiZ8rkm7wUOm49XQGAH0109h5n5mpTQ4JXbWQg8DHuOGLboR4QMssaggKCL3Ig7KwoxYH92YwmNJgjCVbrfhXiudw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e602a01e51e-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=F%2Bno6ZDfX1Ub1bh3%2FLf9PsLh2pw5W65VundiZ8rkm7wUOm49XQGAH0109h5n5mpTQ4JXbWQg8DHuOGLboR4QMssaggKCL3Ig7KwoxYH92YwmNJgjCVbrfhXiudw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e602a01e51e-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=F%2Bno6ZDfX1Ub1bh3%2FLf9PsLh2pw5W65VundiZ8rkm7wUOm49XQGAH0109h5n5mpTQ4JXbWQg8DHuOGLboR4QMssaggKCL3Ig7KwoxYH92YwmNJgjCVbrfhXiudw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e602a01e51e-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;   &quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
 }
 Request method:	POST
 Request URI:	https://reqres.in/api/register
@@ -421,7 +847,7 @@ Body:
     &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:09 GMT
+Date: Thu, 23 Sep 2021 17:51:02 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -431,10 +857,10 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=wJdANZp%2FY0pQrbd2jRrL6ZrvPFDiKzFRZ6nZzZiwHxwFhJl%2BnlOt60LMoi9KN%2FG5RSpBa3av2jLkcMLTbiE093zgD3dzgtsGNS4qlx1H2biYo9vNEctJUSeSHpw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=aTlrDJLT3lqUYguOBjuvRrh0LX%2F76nN6qKBH1nvXgQT14l15Dvp7GicLH2vnOEe4GpcMVdpZXdkjpAg%2B6JAOPJf%2F%2FKSUMpOsfJFoWKhpUpUEIja%2B5ggQT842VRU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546afeeb8e51a-ARI
+CF-RAY: 69359e63f986e51e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -442,7 +868,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:09 GMT
+Date: Thu, 23 Sep 2021 17:51:02 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -452,10 +878,10 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=wJdANZp%2FY0pQrbd2jRrL6ZrvPFDiKzFRZ6nZzZiwHxwFhJl%2BnlOt60LMoi9KN%2FG5RSpBa3av2jLkcMLTbiE093zgD3dzgtsGNS4qlx1H2biYo9vNEctJUSeSHpw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=aTlrDJLT3lqUYguOBjuvRrh0LX%2F76nN6qKBH1nvXgQT14l15Dvp7GicLH2vnOEe4GpcMVdpZXdkjpAg%2B6JAOPJf%2F%2FKSUMpOsfJFoWKhpUpUEIja%2B5ggQT842VRU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546afeeb8e51a-ARI
+CF-RAY: 69359e63f986e51e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -463,7 +889,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:09 GMT
+Date: Thu, 23 Sep 2021 17:51:02 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -473,10 +899,10 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=wJdANZp%2FY0pQrbd2jRrL6ZrvPFDiKzFRZ6nZzZiwHxwFhJl%2BnlOt60LMoi9KN%2FG5RSpBa3av2jLkcMLTbiE093zgD3dzgtsGNS4qlx1H2biYo9vNEctJUSeSHpw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=aTlrDJLT3lqUYguOBjuvRrh0LX%2F76nN6qKBH1nvXgQT14l15Dvp7GicLH2vnOEe4GpcMVdpZXdkjpAg%2B6JAOPJf%2F%2FKSUMpOsfJFoWKhpUpUEIja%2B5ggQT842VRU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546afeeb8e51a-ARI
+CF-RAY: 69359e63f986e51e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -484,7 +910,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:09 GMT
+Date: Thu, 23 Sep 2021 17:51:02 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -494,14 +920,215 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=wJdANZp%2FY0pQrbd2jRrL6ZrvPFDiKzFRZ6nZzZiwHxwFhJl%2BnlOt60LMoi9KN%2FG5RSpBa3av2jLkcMLTbiE093zgD3dzgtsGNS4qlx1H2biYo9vNEctJUSeSHpw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=aTlrDJLT3lqUYguOBjuvRrh0LX%2F76nN6qKBH1nvXgQT14l15Dvp7GicLH2vnOEe4GpcMVdpZXdkjpAg%2B6JAOPJf%2F%2FKSUMpOsfJFoWKhpUpUEIja%2B5ggQT842VRU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546afeeb8e51a-ARI
+CF-RAY: 69359e63f986e51e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;id&quot;: 4,
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:02 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=aTlrDJLT3lqUYguOBjuvRrh0LX%2F76nN6qKBH1nvXgQT14l15Dvp7GicLH2vnOEe4GpcMVdpZXdkjpAg%2B6JAOPJf%2F%2FKSUMpOsfJFoWKhpUpUEIja%2B5ggQT842VRU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e63f986e51e-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;id&quot;: 4,
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:02 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=t%2Fct33y9r60UfnxarhDGQmUcMwIgwC9q0yAboS0Wau1J%2B9ASRLXWQ26tM9f2JMBIumKgTOiNQYkRgIimVEOhTZJ03ksvNzBA%2FXGkpNcylMetg750qUwPMCClnqU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e67cec8e52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:02 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=t%2Fct33y9r60UfnxarhDGQmUcMwIgwC9q0yAboS0Wau1J%2B9ASRLXWQ26tM9f2JMBIumKgTOiNQYkRgIimVEOhTZJ03ksvNzBA%2FXGkpNcylMetg750qUwPMCClnqU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e67cec8e52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:02 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=t%2Fct33y9r60UfnxarhDGQmUcMwIgwC9q0yAboS0Wau1J%2B9ASRLXWQ26tM9f2JMBIumKgTOiNQYkRgIimVEOhTZJ03ksvNzBA%2FXGkpNcylMetg750qUwPMCClnqU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e67cec8e52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:02 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=t%2Fct33y9r60UfnxarhDGQmUcMwIgwC9q0yAboS0Wau1J%2B9ASRLXWQ26tM9f2JMBIumKgTOiNQYkRgIimVEOhTZJ03ksvNzBA%2FXGkpNcylMetg750qUwPMCClnqU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e67cec8e52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:02 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=t%2Fct33y9r60UfnxarhDGQmUcMwIgwC9q0yAboS0Wau1J%2B9ASRLXWQ26tM9f2JMBIumKgTOiNQYkRgIimVEOhTZJ03ksvNzBA%2FXGkpNcylMetg750qUwPMCClnqU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e67cec8e52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 Request method:	POST
@@ -568,8 +1195,24 @@ Body:
     &quot;password&quot;: &quot;pistol&quot;,
     &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
 }
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;password&quot;: &quot;pistol&quot;,
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;
+}
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:10 GMT
+Date: Thu, 23 Sep 2021 17:51:03 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -579,10 +1222,10 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=yj7YEvICe4aoVg2G2VxOZkPLHjPIOUNKLWWg%2By6FpzfL6a0MNquArdHJXUuIz6kCVW%2F5bIp8DUnW2ac1K902055PiY6zMlgjrHdqmxsdDVxSYR1e9kqPy1LEcp0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6%2BYw20OFQYnekiUECe5Onn%2BIKInSEWYb9RnmLQ864fcbxj2fs2K%2B8JrOv2aCwF7wYq0%2Bf6fWL4%2FkVVX%2BWp8eDSqlkkbKzVxr0S%2Bx%2FPM5UlowPIAG6N%2FnKHopUEw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546b48e51e51a-ARI
+CF-RAY: 69359e6bfe1be52a-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -590,7 +1233,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:10 GMT
+Date: Thu, 23 Sep 2021 17:51:03 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -600,10 +1243,10 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=yj7YEvICe4aoVg2G2VxOZkPLHjPIOUNKLWWg%2By6FpzfL6a0MNquArdHJXUuIz6kCVW%2F5bIp8DUnW2ac1K902055PiY6zMlgjrHdqmxsdDVxSYR1e9kqPy1LEcp0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6%2BYw20OFQYnekiUECe5Onn%2BIKInSEWYb9RnmLQ864fcbxj2fs2K%2B8JrOv2aCwF7wYq0%2Bf6fWL4%2FkVVX%2BWp8eDSqlkkbKzVxr0S%2Bx%2FPM5UlowPIAG6N%2FnKHopUEw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546b48e51e51a-ARI
+CF-RAY: 69359e6bfe1be52a-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -611,7 +1254,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:10 GMT
+Date: Thu, 23 Sep 2021 17:51:03 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -621,10 +1264,10 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=yj7YEvICe4aoVg2G2VxOZkPLHjPIOUNKLWWg%2By6FpzfL6a0MNquArdHJXUuIz6kCVW%2F5bIp8DUnW2ac1K902055PiY6zMlgjrHdqmxsdDVxSYR1e9kqPy1LEcp0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6%2BYw20OFQYnekiUECe5Onn%2BIKInSEWYb9RnmLQ864fcbxj2fs2K%2B8JrOv2aCwF7wYq0%2Bf6fWL4%2FkVVX%2BWp8eDSqlkkbKzVxr0S%2Bx%2FPM5UlowPIAG6N%2FnKHopUEw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546b48e51e51a-ARI
+CF-RAY: 69359e6bfe1be52a-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -632,7 +1275,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:10 GMT
+Date: Thu, 23 Sep 2021 17:51:03 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -642,15 +1285,51 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=yj7YEvICe4aoVg2G2VxOZkPLHjPIOUNKLWWg%2By6FpzfL6a0MNquArdHJXUuIz6kCVW%2F5bIp8DUnW2ac1K902055PiY6zMlgjrHdqmxsdDVxSYR1e9kqPy1LEcp0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6%2BYw20OFQYnekiUECe5Onn%2BIKInSEWYb9RnmLQ864fcbxj2fs2K%2B8JrOv2aCwF7wYq0%2Bf6fWL4%2FkVVX%2BWp8eDSqlkkbKzVxr0S%2Bx%2FPM5UlowPIAG6N%2FnKHopUEw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546b48e51e51a-ARI
+CF-RAY: 69359e6bfe1be52a-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;id&quot;: 4,
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6%2BYw20OFQYnekiUECe5Onn%2BIKInSEWYb9RnmLQ864fcbxj2fs2K%2B8JrOv2aCwF7wYq0%2Bf6fWL4%2FkVVX%2BWp8eDSqlkkbKzVxr0S%2Bx%2FPM5UlowPIAG6N%2FnKHopUEw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e6bfe1be52a-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;id&quot;: 4,
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;email&quot;: &quot;sydney@fife&quot;
 }
 Request method:	POST
 Request URI:	https://reqres.in/api/register
@@ -713,7 +1392,7 @@ Body:
     &quot;email&quot;: &quot;sydney@fife&quot;
 }
 HTTP/1.1 400 Bad Request
-Date: Thu, 23 Sep 2021 16:51:11 GMT
+Date: Thu, 23 Sep 2021 17:51:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 28
 Connection: keep-alive
@@ -723,17 +1402,17 @@ etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KFx79e0war9sJiG%2BNqGt%2FXuDIlRdz3qK3tobCL1BEHjRpRf6FzLUphHQKMRwtS6M9dcX2oxFrKlUQ4WJ88h%2B%2FK0JuTDcS8HRdjQFDPks%2B9yfNujzdWxeg4luagM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6c71TMyMODNYJhMdpawBz3ImxYiOz9afBOU6VHNWXejktHqiuq0zOLLkrKEWEIpSknfyEVd1gbJkO%2FwqVMs6n9HbQtG%2FG00T2aHbxfgJYho3AAMchQo%2BSsbpuBw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546b8be4fe526-ARI
+CF-RAY: 69359e7008aee51e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;error&quot;: &quot;Missing password&quot;
 }
 HTTP/1.1 400 Bad Request
-Date: Thu, 23 Sep 2021 16:51:11 GMT
+Date: Thu, 23 Sep 2021 17:51:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 28
 Connection: keep-alive
@@ -743,17 +1422,17 @@ etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KFx79e0war9sJiG%2BNqGt%2FXuDIlRdz3qK3tobCL1BEHjRpRf6FzLUphHQKMRwtS6M9dcX2oxFrKlUQ4WJ88h%2B%2FK0JuTDcS8HRdjQFDPks%2B9yfNujzdWxeg4luagM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6c71TMyMODNYJhMdpawBz3ImxYiOz9afBOU6VHNWXejktHqiuq0zOLLkrKEWEIpSknfyEVd1gbJkO%2FwqVMs6n9HbQtG%2FG00T2aHbxfgJYho3AAMchQo%2BSsbpuBw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546b8be4fe526-ARI
+CF-RAY: 69359e7008aee51e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;error&quot;: &quot;Missing password&quot;
 }
 HTTP/1.1 400 Bad Request
-Date: Thu, 23 Sep 2021 16:51:11 GMT
+Date: Thu, 23 Sep 2021 17:51:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 28
 Connection: keep-alive
@@ -763,17 +1442,17 @@ etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KFx79e0war9sJiG%2BNqGt%2FXuDIlRdz3qK3tobCL1BEHjRpRf6FzLUphHQKMRwtS6M9dcX2oxFrKlUQ4WJ88h%2B%2FK0JuTDcS8HRdjQFDPks%2B9yfNujzdWxeg4luagM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6c71TMyMODNYJhMdpawBz3ImxYiOz9afBOU6VHNWXejktHqiuq0zOLLkrKEWEIpSknfyEVd1gbJkO%2FwqVMs6n9HbQtG%2FG00T2aHbxfgJYho3AAMchQo%2BSsbpuBw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546b8be4fe526-ARI
+CF-RAY: 69359e7008aee51e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
     &quot;error&quot;: &quot;Missing password&quot;
 }
 HTTP/1.1 400 Bad Request
-Date: Thu, 23 Sep 2021 16:51:11 GMT
+Date: Thu, 23 Sep 2021 17:51:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 28
 Connection: keep-alive
@@ -783,10 +1462,30 @@ etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=KFx79e0war9sJiG%2BNqGt%2FXuDIlRdz3qK3tobCL1BEHjRpRf6FzLUphHQKMRwtS6M9dcX2oxFrKlUQ4WJ88h%2B%2FK0JuTDcS8HRdjQFDPks%2B9yfNujzdWxeg4luagM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6c71TMyMODNYJhMdpawBz3ImxYiOz9afBOU6VHNWXejktHqiuq0zOLLkrKEWEIpSknfyEVd1gbJkO%2FwqVMs6n9HbQtG%2FG00T2aHbxfgJYho3AAMchQo%2BSsbpuBw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546b8be4fe526-ARI
+CF-RAY: 69359e7008aee51e-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;error&quot;: &quot;Missing password&quot;
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 17:51:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=6c71TMyMODNYJhMdpawBz3ImxYiOz9afBOU6VHNWXejktHqiuq0zOLLkrKEWEIpSknfyEVd1gbJkO%2FwqVMs6n9HbQtG%2FG00T2aHbxfgJYho3AAMchQo%2BSsbpuBw%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e7008aee51e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -856,8 +1555,24 @@ Body:
     &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
     &quot;password&quot;: &quot;pistol&quot;
 }
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+    &quot;password&quot;: &quot;pistol&quot;
+}
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:11 GMT
+Date: Thu, 23 Sep 2021 17:51:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -867,10 +1582,10 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=tC3WBB8Q4o1ju6wHmomJS%2Brq4UPttfvi6VS41WxyeR8Utfo9Jy6hmf6BC9gltu21gEgdzp2gLKMSqX73ZlaVVLamomS496uk0pWe2yzQ6n3%2FVC0%2Fsjh4qgARiI4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=lu3J8hHGr2HWeFr1%2FYTdi754dSWO6x1nSkHnAga3ZhRYXF%2BnhdTOSO94%2BzSSJz0wVnnHU4nRdRBRl%2FxHXOvB6fgifi66E5QA9e3Nx%2F%2FR709HF9pUKyhNam1FveQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546bc7e61e52e-ARI
+CF-RAY: 69359e742ed1e52e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -878,7 +1593,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:11 GMT
+Date: Thu, 23 Sep 2021 17:51:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -888,10 +1603,10 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=tC3WBB8Q4o1ju6wHmomJS%2Brq4UPttfvi6VS41WxyeR8Utfo9Jy6hmf6BC9gltu21gEgdzp2gLKMSqX73ZlaVVLamomS496uk0pWe2yzQ6n3%2FVC0%2Fsjh4qgARiI4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=lu3J8hHGr2HWeFr1%2FYTdi754dSWO6x1nSkHnAga3ZhRYXF%2BnhdTOSO94%2BzSSJz0wVnnHU4nRdRBRl%2FxHXOvB6fgifi66E5QA9e3Nx%2F%2FR709HF9pUKyhNam1FveQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546bc7e61e52e-ARI
+CF-RAY: 69359e742ed1e52e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -899,7 +1614,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:11 GMT
+Date: Thu, 23 Sep 2021 17:51:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -909,10 +1624,10 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=tC3WBB8Q4o1ju6wHmomJS%2Brq4UPttfvi6VS41WxyeR8Utfo9Jy6hmf6BC9gltu21gEgdzp2gLKMSqX73ZlaVVLamomS496uk0pWe2yzQ6n3%2FVC0%2Fsjh4qgARiI4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=lu3J8hHGr2HWeFr1%2FYTdi754dSWO6x1nSkHnAga3ZhRYXF%2BnhdTOSO94%2BzSSJz0wVnnHU4nRdRBRl%2FxHXOvB6fgifi66E5QA9e3Nx%2F%2FR709HF9pUKyhNam1FveQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546bc7e61e52e-ARI
+CF-RAY: 69359e742ed1e52e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -920,7 +1635,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
     &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
 }
 HTTP/1.1 200 OK
-Date: Thu, 23 Sep 2021 16:51:11 GMT
+Date: Thu, 23 Sep 2021 17:51:04 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 36
 Connection: keep-alive
@@ -930,10 +1645,31 @@ etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
 via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
-Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=tC3WBB8Q4o1ju6wHmomJS%2Brq4UPttfvi6VS41WxyeR8Utfo9Jy6hmf6BC9gltu21gEgdzp2gLKMSqX73ZlaVVLamomS496uk0pWe2yzQ6n3%2FVC0%2Fsjh4qgARiI4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=lu3J8hHGr2HWeFr1%2FYTdi754dSWO6x1nSkHnAga3ZhRYXF%2BnhdTOSO94%2BzSSJz0wVnnHU4nRdRBRl%2FxHXOvB6fgifi66E5QA9e3Nx%2F%2FR709HF9pUKyhNam1FveQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: 693546bc7e61e52e-ARI
+CF-RAY: 69359e742ed1e52e-ARI
+alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+
+{
+    &quot;id&quot;: 4,
+    &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 17:51:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/&quot;24-4iP0za1geN2he+ohu8F0FhCjLks&quot;
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=lu3J8hHGr2HWeFr1%2FYTdi754dSWO6x1nSkHnAga3ZhRYXF%2BnhdTOSO94%2BzSSJz0wVnnHU4nRdRBRl%2FxHXOvB6fgifi66E5QA9e3Nx%2F%2FR709HF9pUKyhNam1FveQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+Server: cloudflare
+CF-RAY: 69359e742ed1e52e-ARI
 alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
 
 {
@@ -951,7 +1687,7 @@ alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 23 sep. de 2021 12:51:12</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 23 sep. de 2021 13:51:04</p>
 </div>
 </div>
 </body>

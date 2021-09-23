@@ -6,7 +6,10 @@ import basePage.BaseTest;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import org.apache.http.HttpStatus;
 import org.junit.Test;
+import pojo.PostUserRequest;
+import pojo.PostUserResponse;
 import pojo.RequestRegister;
 import pojo.ResponseRegister;
 
@@ -97,5 +100,64 @@ public class PostRegisterTest extends BaseTest {
                 .statusCode(400)
                 .body("error", notNullValue());
     }
+    @Test
+    public void serverResponseTest(){
+
+        PostUserRequest user = new PostUserRequest();
+        user.setEmail("eve.holt@reqres.in");
+        user.setPassword("cityslicka");
+
+        PostUserResponse userResponse =
+                given()
+                        .when()
+                        .body(user)
+                        .post("login")
+                        .then()
+                        .statusCode(HttpStatus.SC_OK)
+                        .extract()
+                        .as(PostUserResponse.class);
+    }
+    @Test
+    public void responseTokenTest() {
+
+        PostUserRequest user = new PostUserRequest();
+        user.setEmail("eve.holt@reqres.in");
+        user.setPassword("cityslicka");
+
+        PostUserResponse userResponse =
+                given()
+                        .when()
+                        .body(user)
+                        .post("login")
+                        .then()
+                        .statusCode(HttpStatus.SC_OK)
+                        .body("token",notNullValue())
+                        .extract()
+                        .as(PostUserResponse.class);
+
+        assertThat(userResponse.getToken(), equalTo("QpwL5tke4Pnpja7X4"));
+
+    }
+
+    @Test
+    public void userBodyResponseTest() {
+
+        PostUserRequest user = new PostUserRequest();
+        user.setEmail("eve.holt@reqres.in");
+        user.setPassword("cityslicka");
+
+        PostUserResponse userResponse =
+                given()
+                        .when()
+                        .body(user)
+                        .post("login")
+                        .then()
+                        .statusCode(HttpStatus.SC_OK)
+                        .contentType(equalTo("application/json; charset=utf-8"))
+                        .extract()
+                        .body()
+                        .as(PostUserResponse.class);
+    }
 }
+
 
