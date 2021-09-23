@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testPost.PostRegisterTest" tests="5" skipped="0" failures="1" errors="0" timestamp="2021-09-23T16:51:08" hostname="DESKTOP-0LJSN9D" time="3.334">
+  <properties/>
+  <testcase name="postRegisterNotDefinedUserTest" classname="testPost.PostRegisterTest" time="0.601"/>
+  <testcase name="postRegisterInvalidPasswordTest" classname="testPost.PostRegisterTest" time="0.642">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at testPost.PostRegisterTest.postRegisterInvalidPasswordTest(PostRegisterTest.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</failure>
+  </testcase>
+  <testcase name="postRegisterValidTest2" classname="testPost.PostRegisterTest" time="0.788"/>
+  <testcase name="postRegisterWithoutPasswordTest1" classname="testPost.PostRegisterTest" time="0.62"/>
+  <testcase name="postRegisterValidTest" classname="testPost.PostRegisterTest" time="0.674"/>
+  <system-out><![CDATA[2021-09-23T12:51:08,373 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T12:51:08,373 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "123456789",
+    "email": "juan.perez@gmail.com"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "123456789",
+    "email": "juan.perez@gmail.com"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "123456789",
+    "email": "juan.perez@gmail.com"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "123456789",
+    "email": "juan.perez@gmail.com"
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 16:51:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 57
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"39-6jrJxn+7f+pQUhbPgNMst7tagpA"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oCp7onDHuexZpOZzWH0LmvFHvWcwqiYEtha4Vo1w5T%2F7XjpHEbrmVd1SBOpWbnkEvuKLKjWhiIE%2F%2FSMyzTMY2WnZyLCcUeUDLLFwoMwRgTnzRALx3RC%2FGSqPdaE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546ac3ad5e52a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Note: Only defined users succeed registration"
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 16:51:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 57
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"39-6jrJxn+7f+pQUhbPgNMst7tagpA"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oCp7onDHuexZpOZzWH0LmvFHvWcwqiYEtha4Vo1w5T%2F7XjpHEbrmVd1SBOpWbnkEvuKLKjWhiIE%2F%2FSMyzTMY2WnZyLCcUeUDLLFwoMwRgTnzRALx3RC%2FGSqPdaE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546ac3ad5e52a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Note: Only defined users succeed registration"
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 16:51:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 57
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"39-6jrJxn+7f+pQUhbPgNMst7tagpA"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oCp7onDHuexZpOZzWH0LmvFHvWcwqiYEtha4Vo1w5T%2F7XjpHEbrmVd1SBOpWbnkEvuKLKjWhiIE%2F%2FSMyzTMY2WnZyLCcUeUDLLFwoMwRgTnzRALx3RC%2FGSqPdaE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546ac3ad5e52a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Note: Only defined users succeed registration"
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 16:51:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 57
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"39-6jrJxn+7f+pQUhbPgNMst7tagpA"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oCp7onDHuexZpOZzWH0LmvFHvWcwqiYEtha4Vo1w5T%2F7XjpHEbrmVd1SBOpWbnkEvuKLKjWhiIE%2F%2FSMyzTMY2WnZyLCcUeUDLLFwoMwRgTnzRALx3RC%2FGSqPdaE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546ac3ad5e52a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Note: Only defined users succeed registration"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "   ",
+    "email": "eve.holt@reqres.in"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "   ",
+    "email": "eve.holt@reqres.in"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "   ",
+    "email": "eve.holt@reqres.in"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "   ",
+    "email": "eve.holt@reqres.in"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wJdANZp%2FY0pQrbd2jRrL6ZrvPFDiKzFRZ6nZzZiwHxwFhJl%2BnlOt60LMoi9KN%2FG5RSpBa3av2jLkcMLTbiE093zgD3dzgtsGNS4qlx1H2biYo9vNEctJUSeSHpw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546afeeb8e51a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wJdANZp%2FY0pQrbd2jRrL6ZrvPFDiKzFRZ6nZzZiwHxwFhJl%2BnlOt60LMoi9KN%2FG5RSpBa3av2jLkcMLTbiE093zgD3dzgtsGNS4qlx1H2biYo9vNEctJUSeSHpw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546afeeb8e51a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wJdANZp%2FY0pQrbd2jRrL6ZrvPFDiKzFRZ6nZzZiwHxwFhJl%2BnlOt60LMoi9KN%2FG5RSpBa3av2jLkcMLTbiE093zgD3dzgtsGNS4qlx1H2biYo9vNEctJUSeSHpw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546afeeb8e51a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wJdANZp%2FY0pQrbd2jRrL6ZrvPFDiKzFRZ6nZzZiwHxwFhJl%2BnlOt60LMoi9KN%2FG5RSpBa3av2jLkcMLTbiE093zgD3dzgtsGNS4qlx1H2biYo9vNEctJUSeSHpw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546afeeb8e51a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "pistol",
+    "email": "eve.holt@reqres.in"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "pistol",
+    "email": "eve.holt@reqres.in"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "pistol",
+    "email": "eve.holt@reqres.in"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "pistol",
+    "email": "eve.holt@reqres.in"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yj7YEvICe4aoVg2G2VxOZkPLHjPIOUNKLWWg%2By6FpzfL6a0MNquArdHJXUuIz6kCVW%2F5bIp8DUnW2ac1K902055PiY6zMlgjrHdqmxsdDVxSYR1e9kqPy1LEcp0%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546b48e51e51a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yj7YEvICe4aoVg2G2VxOZkPLHjPIOUNKLWWg%2By6FpzfL6a0MNquArdHJXUuIz6kCVW%2F5bIp8DUnW2ac1K902055PiY6zMlgjrHdqmxsdDVxSYR1e9kqPy1LEcp0%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546b48e51e51a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yj7YEvICe4aoVg2G2VxOZkPLHjPIOUNKLWWg%2By6FpzfL6a0MNquArdHJXUuIz6kCVW%2F5bIp8DUnW2ac1K902055PiY6zMlgjrHdqmxsdDVxSYR1e9kqPy1LEcp0%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546b48e51e51a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yj7YEvICe4aoVg2G2VxOZkPLHjPIOUNKLWWg%2By6FpzfL6a0MNquArdHJXUuIz6kCVW%2F5bIp8DUnW2ac1K902055PiY6zMlgjrHdqmxsdDVxSYR1e9kqPy1LEcp0%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546b48e51e51a-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "sydney@fife"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "sydney@fife"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "sydney@fife"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "sydney@fife"
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 16:51:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KFx79e0war9sJiG%2BNqGt%2FXuDIlRdz3qK3tobCL1BEHjRpRf6FzLUphHQKMRwtS6M9dcX2oxFrKlUQ4WJ88h%2B%2FK0JuTDcS8HRdjQFDPks%2B9yfNujzdWxeg4luagM%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546b8be4fe526-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Missing password"
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 16:51:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KFx79e0war9sJiG%2BNqGt%2FXuDIlRdz3qK3tobCL1BEHjRpRf6FzLUphHQKMRwtS6M9dcX2oxFrKlUQ4WJ88h%2B%2FK0JuTDcS8HRdjQFDPks%2B9yfNujzdWxeg4luagM%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546b8be4fe526-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Missing password"
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 16:51:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KFx79e0war9sJiG%2BNqGt%2FXuDIlRdz3qK3tobCL1BEHjRpRf6FzLUphHQKMRwtS6M9dcX2oxFrKlUQ4WJ88h%2B%2FK0JuTDcS8HRdjQFDPks%2B9yfNujzdWxeg4luagM%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546b8be4fe526-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Missing password"
+}
+HTTP/1.1 400 Bad Request
+Date: Thu, 23 Sep 2021 16:51:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KFx79e0war9sJiG%2BNqGt%2FXuDIlRdz3qK3tobCL1BEHjRpRf6FzLUphHQKMRwtS6M9dcX2oxFrKlUQ4WJ88h%2B%2FK0JuTDcS8HRdjQFDPks%2B9yfNujzdWxeg4luagM%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546b8be4fe526-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "error": "Missing password"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tC3WBB8Q4o1ju6wHmomJS%2Brq4UPttfvi6VS41WxyeR8Utfo9Jy6hmf6BC9gltu21gEgdzp2gLKMSqX73ZlaVVLamomS496uk0pWe2yzQ6n3%2FVC0%2Fsjh4qgARiI4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546bc7e61e52e-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tC3WBB8Q4o1ju6wHmomJS%2Brq4UPttfvi6VS41WxyeR8Utfo9Jy6hmf6BC9gltu21gEgdzp2gLKMSqX73ZlaVVLamomS496uk0pWe2yzQ6n3%2FVC0%2Fsjh4qgARiI4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546bc7e61e52e-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tC3WBB8Q4o1ju6wHmomJS%2Brq4UPttfvi6VS41WxyeR8Utfo9Jy6hmf6BC9gltu21gEgdzp2gLKMSqX73ZlaVVLamomS496uk0pWe2yzQ6n3%2FVC0%2Fsjh4qgARiI4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546bc7e61e52e-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 16:51:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tC3WBB8Q4o1ju6wHmomJS%2Brq4UPttfvi6VS41WxyeR8Utfo9Jy6hmf6BC9gltu21gEgdzp2gLKMSqX73ZlaVVLamomS496uk0pWe2yzQ6n3%2FVC0%2Fsjh4qgARiI4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693546bc7e61e52e-ARI
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
