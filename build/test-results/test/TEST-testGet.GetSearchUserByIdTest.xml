@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testGet.GetSearchUserByIdTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-23T20:52:42" hostname="ENY" time="2.808">
+  <properties/>
+  <testcase name="requestSearchSingleUserByCorrectId" classname="testGet.GetSearchUserByIdTest" time="2.039"/>
+  <testcase name="requestSearchSingleUserByIncorrectId" classname="testGet.GetSearchUserByIdTest" time="0.766"/>
+  <system-out><![CDATA[2021-09-23T17:52:40,652 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T17:52:42,026 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+Request method:	GET
+Request URI:	https://reqres.in/api/users/2?format=json
+Proxy:			<none>
+Request params:	<none>
+Query params:	format=json
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 21:53:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 418
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MHwZhw8VxIIidHZTO8sf50JRpLV8iGlY54u6ArcQdv4SQpwVntO8WqQ%2FaeB%2FIZ8ib4pduh3BVL8C0UwOPUBCvA2NE%2B%2FvopE3QoWH5dq4hA39S%2B0SCf4xvpJteuM%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 693701cd5ffd5006-LIM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Sep 2021 21:53:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 418
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MHwZhw8VxIIidHZTO8sf50JRpLV8iGlY54u6ArcQdv4SQpwVntO8WqQ%2FaeB%2FIZ8ib4pduh3BVL8C0UwOPUBCvA2NE%2B%2FvopE3QoWH5dq4hA39S%2B0SCf4xvpJteuM%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 693701cd5ffd5006-LIM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+Request method:	GET
+Request URI:	https://reqres.in/api/users/23?format=json
+Proxy:			<none>
+Request params:	<none>
+Query params:	format=json
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Thu, 23 Sep 2021 21:53:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: MISS
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=o0sSHpvSPwg6QBwQvjLnomMhenIVjxgIB%2BedtGrE7lnPFYYB07CxMIRe0zv71YhJCfcZ7xjGYOWrateyUNtCcrTWzW6ZdIYVbtnvOdMjQUC%2BopkNsepQvg%2F4Ga4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 693701d1bcf14ffb-LIM
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    
+}
+HTTP/1.1 404 Not Found
+Date: Thu, 23 Sep 2021 21:53:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: MISS
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=o0sSHpvSPwg6QBwQvjLnomMhenIVjxgIB%2BedtGrE7lnPFYYB07CxMIRe0zv71YhJCfcZ7xjGYOWrateyUNtCcrTWzW6ZdIYVbtnvOdMjQUC%2BopkNsepQvg%2F4Ga4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 693701d1bcf14ffb-LIM
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    
+}
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>
