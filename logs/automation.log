@@ -1,0 +1,8 @@
+2021-09-23T11:55:42,777 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T11:55:45,675 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+2021-09-23T11:55:53,596 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T11:55:53,600 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+2021-09-23T12:14:42,484 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T12:14:49,582 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+2021-09-23T12:15:00,153 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T12:15:00,158 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
