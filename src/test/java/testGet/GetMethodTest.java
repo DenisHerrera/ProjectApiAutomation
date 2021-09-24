@@ -68,6 +68,7 @@ public class GetMethodTest extends BaseTest {
     public void getAllUserTest2(){
         String response = given()
                 .when().get("users?page=2").then().extract().body().asString();
+
         int page = from(response).get("page");
         int totalPages = from(response).get("total_pages");
         int idFirstUser = from(response).get("data[0].id");
@@ -81,6 +82,19 @@ public class GetMethodTest extends BaseTest {
 
         List<Map> user = from(response).get("data.findAll { user -> user.id>10 && user.last_name == 'Howell'}");
         int id = Integer.valueOf(user.get(0). get("id").toString());
+    }
+
+    @Test
+    public void getUsersWrongPageNumber(){
+        String response = given()
+                .when().get("users?page=4")
+                .then()
+                .statusCode(404)
+                .extract().body().asString();
+        int page = from(response).get("page");
+        int totalPages = from(response).get("total_pages");
+        int idFirstUser = from(response).get("data[0].id");
+        assertThat("id", notNullValue());
     }
 
 }
