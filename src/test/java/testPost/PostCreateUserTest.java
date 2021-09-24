@@ -48,7 +48,7 @@ public class PostCreateUserTest extends BaseTest {
                 .body(userCreate).
                 post("/users")
                 .then()
-                .statusCode(HttpStatus.SC_CREATED)
+                .statusCode(HttpStatus.SC_BAD_REQUEST)
                 .extract()
                 .body()
                 .as(PostCreateUserResponse.class);
@@ -66,7 +66,7 @@ public class PostCreateUserTest extends BaseTest {
                 .body(userCreate).
                 post("/users")
                 .then()
-                .statusCode(HttpStatus.SC_CREATED)
+                .statusCode(HttpStatus.SC_BAD_REQUEST)
                 .extract()
                 .body()
                 .as(PostCreateUserResponse.class);
@@ -84,7 +84,7 @@ public class PostCreateUserTest extends BaseTest {
                 .body(userCreate).
                 post("/users")
                 .then()
-                .statusCode(HttpStatus.SC_CREATED)
+                .statusCode(HttpStatus.SC_BAD_REQUEST)
                 .extract()
                 .body()
                 .as(PostCreateUserResponse.class);
