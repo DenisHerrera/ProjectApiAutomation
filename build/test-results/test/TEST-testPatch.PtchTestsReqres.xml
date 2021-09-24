@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testPatch.PtchTestsReqres" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-09-24T00:52:06" hostname="macbook-2021" time="6.539">
+  <properties/>
+  <testcase name="patchUser" classname="testPatch.PtchTestsReqres" time="4.605"/>
+  <testcase name="patchUserWithoutId" classname="testPatch.PtchTestsReqres" time="1.24"/>
+  <testcase name="patchUserWithPojo" classname="testPatch.PtchTestsReqres" time="0.687"/>
+  <system-out><![CDATA[2021-09-23T20:52:04,662 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T20:52:06,466 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+Request method:	PATCH
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "job": "Quality Assurance"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:09 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"42-l2TSDeE1j0PBmHd0UpQJQpBCgCA"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lWha%2BiImgKVkledxTDGgIzkeDuuwcIcFOpPg0Iq9hrarWktxe4srrgpK9fjSDHTRqHXg9JfPbKmILzbdM9ZfQxEzLYpzZKgeHIBV97G18Rvs5Jkl%2FRf%2F7JcIXUc%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693807432946e52a-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "job": "Quality Assurance",
+    "updatedAt": "2021-09-24T00:52:09.378Z"
+}
+Request method:	PATCH
+Request URI:	https://reqres.in/api/users/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Diego Lopez",
+    "job": null
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:12 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"48-d6LwXDfe4UbgsWa29LAQoN0UP/E"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pqWhQ%2FfTdmLZHnkMiAqdWo40X4XW4O0uP2Sg7ny8SVczkEgc6iFLEjdL10LvK96brMedws4bpnal4x7LGGfVUY4dN%2BcHTtZ6phrjbTv%2BhxrBBve%2BxfpUejb2NS8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 693807557c14e52e-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "Diego Lopez",
+    "job": null,
+    "updatedAt": "2021-09-24T00:52:12.254Z"
+}
+Request method:	PATCH
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Denis",
+    "job": null
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:13 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"42-RliGN6fGhTmDfGoykpkB5mxnZ8Q"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cT6O5EESj%2Bx4k5WjrJezhqPiB3zCRvKzMZ8b6Qlz%2B1VUQXxZ26tZgxMXunko7Gpsykqp350MyxPlkxI2Bv%2BL8FmLH8qF9yXTq%2BvQMabQ3SWn2nqD9x9JzRl%2FlqI%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6938075c69f5e526-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "Denis",
+    "job": null,
+    "updatedAt": "2021-09-24T00:52:13.158Z"
+}
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>

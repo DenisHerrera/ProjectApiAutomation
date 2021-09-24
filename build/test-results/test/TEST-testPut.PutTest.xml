@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testPut.PutTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-09-24T00:52:13" hostname="macbook-2021" time="2.919">
+  <properties/>
+  <testcase name="userUpdateTestS1" classname="testPut.PutTest" time="0.706"/>
+  <testcase name="bodyResponseTest" classname="testPut.PutTest" time="0.697"/>
+  <testcase name="responseServerPutMethodTest" classname="testPut.PutTest" time="0.648"/>
+  <testcase name="responseUpdatedAtTest" classname="testPut.PutTest" time="0.863"/>
+  <system-out><![CDATA[2021-09-23T20:52:13,060 [Test worker] INFO  (BaseTest.java:18) - Inicando configuracion
+2021-09-23T20:52:13,064 [Test worker] INFO  (BaseTest.java:23) - Configuracion exitosa
+Request method:	PUT
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+Request method:	PUT
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:13 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"50-GTbqKHzFL/0qXrh2x5l9bcHrWv8"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gWVaf7bsHuPIZVz7XsxV5o%2B%2Ff80jrElsX%2B2QFwa4cpD91mJaDXWy0qrTq%2BBkZegPBpt%2BmLZ8o6AUo3X8gLBUFH%2FhaMpDZWo1gfJzfaVrNmWH5GAvjNfwB6RVCiQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 693807603e06e52e-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2021-09-24T00:52:13.827Z"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:13 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"50-GTbqKHzFL/0qXrh2x5l9bcHrWv8"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gWVaf7bsHuPIZVz7XsxV5o%2B%2Ff80jrElsX%2B2QFwa4cpD91mJaDXWy0qrTq%2BBkZegPBpt%2BmLZ8o6AUo3X8gLBUFH%2FhaMpDZWo1gfJzfaVrNmWH5GAvjNfwB6RVCiQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 693807603e06e52e-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2021-09-24T00:52:13.827Z"
+}
+Request method:	PUT
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+Request method:	PUT
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:14 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"50-NfzCBW1M4W5vBlvOT2mXrPJHCyA"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WJhELaXNIs7lAKrhq4XUvFLGalciT0BVSsjCtLEhug9Mifm52f1exafedHu42BWlwzxXePzae4Fug6%2F1T2Da4LTivNOnHPRYKQcd1RbsAIpEozn%2F31nHW1E8tqQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 69380764ed84e51e-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2021-09-24T00:52:14.537Z"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:14 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"50-NfzCBW1M4W5vBlvOT2mXrPJHCyA"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WJhELaXNIs7lAKrhq4XUvFLGalciT0BVSsjCtLEhug9Mifm52f1exafedHu42BWlwzxXePzae4Fug6%2F1T2Da4LTivNOnHPRYKQcd1RbsAIpEozn%2F31nHW1E8tqQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 69380764ed84e51e-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2021-09-24T00:52:14.537Z"
+}
+Request method:	PUT
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+Request method:	PUT
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:15 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"50-JDY0VgS/M3uxGpMi1WGWA5fiIWw"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rxBdDu7t%2FZGb%2BIaGRgU1SCNPaH4GQiKb80zp3mmwQ4me2vjduVbT6N95Ac2AN5PtZ3aYjJTpfDz8%2B6KT3HizTGQP5HIsWkGu%2BVTLhg36doHiDrYGNDjdUjwWa5E%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6938076909dce52a-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2021-09-24T00:52:15.208Z"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:15 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"50-JDY0VgS/M3uxGpMi1WGWA5fiIWw"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rxBdDu7t%2FZGb%2BIaGRgU1SCNPaH4GQiKb80zp3mmwQ4me2vjduVbT6N95Ac2AN5PtZ3aYjJTpfDz8%2B6KT3HizTGQP5HIsWkGu%2BVTLhg36doHiDrYGNDjdUjwWa5E%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6938076909dce52a-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2021-09-24T00:52:15.208Z"
+}
+Request method:	PUT
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+Request method:	PUT
+Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:15 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"50-HCl/VXiPt50gzce1okFm6+atTfg"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=O7%2FwhELvSqnK1Dur%2F5eTKZe9zgLBEpndUqU%2B2lovQFDwqTBAzJSGmDFwaANqmqUwEfZoVg7e7uYUwx3fsUiv1JY2mt0D3o4ibayef2C6Gy120HeNLhPesEJi8ck%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6938076d0c09e51e-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2021-09-24T00:52:15.864Z"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Sep 2021 00:52:15 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"50-HCl/VXiPt50gzce1okFm6+atTfg"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=O7%2FwhELvSqnK1Dur%2F5eTKZe9zgLBEpndUqU%2B2lovQFDwqTBAzJSGmDFwaANqmqUwEfZoVg7e7uYUwx3fsUiv1JY2mt0D3o4ibayef2C6Gy120HeNLhPesEJi8ck%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6938076d0c09e51e-ARI
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2021-09-24T00:52:15.864Z"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
